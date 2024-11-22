@@ -1,0 +1,434 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="722,5741.333333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="732,5676.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="output_img" />
+      <Variable x:TypeArguments="x:String" Name="text" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="670,5588.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="inputDescription" />
+        <Variable x:TypeArguments="x:String" Name="processname" />
+        <Variable x:TypeArguments="x:String" Name="fileName" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="608,275.3333333333333" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter the name of the process to automate flowchart " Title="Enter process name">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[processname]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="608,275.3333333333333" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Enter the file name to save in your device" Title="FileName">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[fileName]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: ChatGPT" sap:VirtualizedContainerService.HintSize="608,1439.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="ea14142f-452d-459f-ac29-1e6a85472882" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1188.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="10" DisplayName="Type Into 'ChatGPT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,252" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="ea14142f-452d-459f-ac29-1e6a85472882" Text="[&quot;Generate plantuml code for the flowchart of  &quot;+processname +&quot;  activity[k(Enter)]&quot;]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://chatgpt.com/" CVScreenId="424804b6-93a1-4839-a781-f427cc056db4" CvElementArea="686, 545, 961, 82" CvType="InputBox" DesignTimeRectangle="764, 570, 807, 36" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='placeholder' aaname='' /&gt;" Guid="787422d0-3376-43b1-a319-2e4c943afe89" InformativeScreenshot="4bacfe485dd8ecd5310211dce66a8377.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ChatGPT' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="407, 170, 1518, 84" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DIV' class='draggable no-draggable-children sticky top-0 p-3 mb-1.5 flex items-center justify-between z-10 h-header-height font-semibold bg-token-main-surface-primary max-md:hidden' aaname='' check:innerText='ChatGPT' /&gt;" Guid="988de26a-82a2-4738-807c-4007ed4a56b8" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NGetText DisplayName="Get Text 'plantuml'" sap:VirtualizedContainerService.HintSize="450,190.66666666666666" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ea14142f-452d-459f-ac29-1e6a85472882" TextString="[text]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://chatgpt.com/c/670a3696-99f8-8012-a8ed-bb292fa2d746" DesignTimeRectangle="760, -1145, 874, 1848" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;article&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;pre&amp;gt;div&amp;gt;div' idx='3' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='overflow-y-auto p-4' tag='DIV' aaname='' /&gt;" Guid="e48ac121-b632-4284-8583-d59fdd48523c" ImageBase64="" InformativeScreenshot="394a7b72acfd142d347210492cbe5497.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ChatGPT' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="89351969-6d5f-4584-be56-ac2fecf431b8" CvTextArea="781, 468, 828, 22" CvTextArgument="plantuml Copy code" CvType="Text" DesignTimeRectangle="760, -1199, 874, 54" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='plantuml' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='plantuml' tag='DIV' type='' class='flex items-center text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9' check:innerText='plantuml' /&gt;" Guid="294d9050-463f-429d-9e1a-331c2db933bf" SearchSteps="Selector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Untitled - Notepad" sap:VirtualizedContainerService.HintSize="450,655.3333333333334" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="023d2348-5cf7-4414-bac4-1d0cf1576de2" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,336" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'RichEditD2DPT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,245.33333333333334" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="023d2348-5cf7-4414-bac4-1d0cf1576de2" Text="[text]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="9, 112, 1422, 559" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" FuzzySelectorArgument="&lt;wnd cls='RichEditD2DPT' /&gt;" Guid="a18948f9-17be-4f4c-87ea-0521ede29e5f" InformativeScreenshot="ca7e7243a66102f6043e74225f3c07fd.png" ScopeSelectorArgument="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="342, 342, 1440, 728" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="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" InformativeScreenshot="6cac4a623783eb3531d1134d90a8914e.png" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Title="Untitled - Notepad" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="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" InformativeScreenshot="0689bf6f0ab229e36960eac5cf2f7404.jpg" Selector="&lt;html app='msedge.exe' title='ChatGPT' /&gt;" Title="New tab" Url="https://chatgpt.com/" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: draw.io" sap:VirtualizedContainerService.HintSize="608,3488" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="37fab6c8-4058-478c-a3c8-b084911ffaa2" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="574,3246.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="512,3156" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'Drawio Page'" sap:VirtualizedContainerService.HintSize="450,3040" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="f6d55db67fa7643dded755f08fd37f42" Selector="&lt;html app='msedge.exe' title='draw.io' /&gt;">
+                  <ui:BrowserScope.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2867.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="354,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                          <ui:Click.CursorPosition>
+                            <ui:CursorPosition OffsetX="108" OffsetY="21" Position="TopLeft" />
+                          </ui:Click.CursorPosition>
+                          <ui:Click.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d5332097-94f9-45de-91c0-1830faf050f5" InformativeScreenshot="097d8e604c63db96bcce995ad92fd812" Selector="&lt;webctrl class='geBigButton' tag='BUTTON' /&gt;" WaitForReady="COMPLETE">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                            </ui:Target>
+                          </ui:Click.Target>
+                        </ui:Click>
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'TD'" sap:VirtualizedContainerService.HintSize="354,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                          <ui:Click.CursorPosition>
+                            <ui:CursorPosition OffsetX="88" OffsetY="90" Position="TopLeft" />
+                          </ui:Click.CursorPosition>
+                          <ui:Click.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="04b1c89c-29bb-4f12-a8a1-27438516623b" InformativeScreenshot="b1969ff831e1005224036a2e8e36f94e" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" WaitForReady="COMPLETE">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                            </ui:Target>
+                          </ui:Click.Target>
+                        </ui:Click>
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="354,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                          <ui:Click.CursorPosition>
+                            <ui:CursorPosition OffsetX="27" OffsetY="23" Position="TopLeft" />
+                          </ui:Click.CursorPosition>
+                          <ui:Click.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8465403a-0993-4cc0-87b4-308c2b625758" InformativeScreenshot="894639fe8d41c45a84147268a9b3619d" Selector="&lt;webctrl aaname='Create' tag='BUTTON' /&gt;" WaitForReady="COMPLETE">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                            </ui:Target>
+                          </ui:Click.Target>
+                        </ui:Click>
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="8" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="354,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                          <ui:Click.CursorPosition>
+                            <ui:CursorPosition OffsetX="51" OffsetY="28" Position="TopLeft" />
+                          </ui:Click.CursorPosition>
+                          <ui:Click.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="71f23c91-53f6-4201-932c-cef2bb4d6b26" InformativeScreenshot="ee270accc0a1543bef770fbe8104aeef" Selector="&lt;webctrl aaname='Save' tag='BUTTON' /&gt;" WaitForReady="COMPLETE">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                            </ui:Target>
+                          </ui:Click.Target>
+                        </ui:Click>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="354,190.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="37fab6c8-4058-478c-a3c8-b084911ffaa2" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://app.diagrams.net/#G1lHOuwu_yJUo8hrtPFm-n0fA0tqym3PbV#%7B%22pageId%22%3A%223kO0Kk4XSz6lV08lWn_K%22%7D" CVScreenId="13e48838-f7f9-47ec-a12e-67b7518932c2" CvTextArea="925, 229, 25, 25" CvTextArgument="+" CvType="Text" DesignTimeRectangle="921, 227, 59, 38" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl aaname='Insert (Doubleclick to insert text)' class='geLabel' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Insert (Doubleclick to insert text)' class='geLabel' tag='A' type='' /&gt;" Guid="3c7d3b8c-a5d7-4a3b-8d7c-6aff669a00aa" ImageBase64="" InformativeScreenshot="62cc4ea0868ba9ad175b368772d5cbf7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Untitled Diagram.drawio - draw.io' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="13e48838-f7f9-47ec-a12e-67b7518932c2" CvElementArea="1006, 229, 28, 28" CvType="Icon" DesignTimeRectangle="1007, 228, 31, 31" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div' idx='16' isleaf='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='geSprite geSprite-table' isleaf='1' tag='DIV' aaname='' /&gt;" Guid="3ffe026d-615e-41e8-976f-abb02d1f1847" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAFiSURBVFhH7ZZNS8NAEIb9H2JF8QOt9Sp6UZNKS7BYrV+htNGDBS0Fe9DW2jQ1bfoF5mbS+mdHJ5CQDbueIi64h+fykmWeDDvLzM0vJIAXhAwLIcNCyLBgyiS3UrCzuxcLydQ2tUYUpoxaLIJt27FQKpepNaIwZbSbWxhPJnCtqpA/PQvQOx3oWxYUCudE/maaYBgGkV1cXsFgOIK7SoVaI8qPMm1dh/WNTSK/f6jC03MDFpeWifyxXodqrUZkK6tr0HxpCZnflelbA8gqCuwfSgGNZhOMbhckOU3kKN56bRNZJpMFs9eLR2Y6+wTHdeHDcQLc6czLw5mfI+EMz+K3scgMR2NvKrA7Pvj3ODnKcY7IcZKwO+Esd5L3uisu8P+R4erOcDVN/jtzIMkB/jsjp4+IHLuCXQtnsb4z4gLT4E6Gm30GN7337y0tDkqaRq0RhSnD1Q78FwgZFkKGhZChk4Avaxd5D1e9cjIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                              <uix:TargetAnchorable.PointOffset>
+                                <uix:PointOffset Position="BottomRight" X="-11" Y="-12" />
+                              </uix:TargetAnchorable.PointOffset>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Advanced'" sap:VirtualizedContainerService.HintSize="354,190.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="37fab6c8-4058-478c-a3c8-b084911ffaa2" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://app.diagrams.net/#G1h-OPZiCKcDsZP5J3jinYp143wwYWYfrQ#%7B%22pageId%22%3A%22gYY65n3_pmdqsD229S0S%22%7D" CVScreenId="ac8710f1-fec9-4b22-bd5a-c6024899866c" CvTextArea="969, 907, 90, 19" CvTextArgument="Advanced" CvType="Text" DesignTimeRectangle="927, 893, 185, 48" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='mxPopupMenu' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' tableRow='18' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mxPopupMenu' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' type='' tag='TD' aaname='Advanced' check:innerText='Advanced' /&gt;" Guid="0cacaf65-e3b7-4808-8a20-13ca21cc8910" InformativeScreenshot="7f1dbc318d249509ac8253cacd0890ed.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Untitled Diagram.drawio - draw.io' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                  <uix:Target CVScreenId="ac8710f1-fec9-4b22-bd5a-c6024899866c" CvTextArea="969, 859, 63, 24" CvTextArgument="Layout" CvType="Text" DesignTimeRectangle="927, 845, 185, 48" ElementType="Text" FullSelectorArgument="&lt;webctrl class='mxPopupMenu' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' tableRow='17' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mxPopupMenu' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' type='' tag='TD' aaname='Layout' check:innerText='Layout' /&gt;" Guid="1ee40607-56bd-4ec3-b628-663391114b25" SearchSteps="Selector, CV" />
+                                  <uix:Target CVScreenId="ac8710f1-fec9-4b22-bd5a-c6024899866c" CvElementArea="954, 231, 25, 24" CvType="ArrowButton" DesignTimeRectangle="958, 235, 20, 20" ElementType="Icon" FullSelectorArgument="&lt;webctrl aaname='Insert (Doubleclick to insert text)' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Insert (Doubleclick to insert text)' tag='IMG' type='' class='' /&gt;" Guid="d6c56375-d545-4937-bce7-436ea858c3be" SearchSteps="Selector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PlantUML...'" sap:VirtualizedContainerService.HintSize="354,190.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="37fab6c8-4058-478c-a3c8-b084911ffaa2" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://app.diagrams.net/#G1zNHXFF37mrsvaokHM6kqAABeDOTy_Jr5#%7B%22pageId%22%3A%22LD_7zTJlvcEdjqLZmnBt%22%7D" CVScreenId="4d34b3f2-489b-4584-a51b-97642c7bcc75" CvTextArea="1221, 819, 102, 19" CvTextArgument="PlantUML..." CvType="Text" DesignTimeRectangle="1179, 806, 189, 48" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='mxPopupMenu' idx='2' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mxPopupMenu' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' type='' tag='TD' aaname='PlantUML...' check:innerText='PlantUML...' /&gt;" Guid="c0e3881d-a805-49c4-ac44-9550af76e5b3" InformativeScreenshot="846f4aa6096ee2c3798cb43270cd0299.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Untitled Diagram.drawio - draw.io' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="4d34b3f2-489b-4584-a51b-97642c7bcc75" CvTextArea="969, 907, 90, 19" CvTextArgument="Advanced" CvType="Text" DesignTimeRectangle="927, 893, 185, 48" ElementType="Text" FullSelectorArgument="&lt;webctrl class='mxPopupMenu' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' tableRow='18' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mxPopupMenu' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' type='' tag='TD' aaname='Advanced' check:innerText='Advanced' /&gt;" Guid="58c065f8-1450-424c-96a6-65ff4788d0f7" SearchSteps="Selector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'TEXTAREA'" EmptyField="False" sap:VirtualizedContainerService.HintSize="354,188.66666666666666" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="False" SimulateType="True" Text="[text]">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="706052a7-4b73-4bb3-bfad-363c873c0158" InformativeScreenshot="04a734e2d3904e8d4c319aab1c4974f8" Selector="&lt;webctrl tag='TEXTAREA' /&gt;" WaitForReady="COMPLETE">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                            </ui:Target>
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="10" DisplayName="Click 'Insert'" sap:VirtualizedContainerService.HintSize="354,190.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="37fab6c8-4058-478c-a3c8-b084911ffaa2" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://app.diagrams.net/#G1lHOuwu_yJUo8hrtPFm-n0fA0tqym3PbV#%7B%22pageId%22%3A%223kO0Kk4XSz6lV08lWn_K%22%7D" CVScreenId="e0f418d7-c817-4eaf-9dc8-1559beee7417" CvElementArea="1323, 841, 111, 48" CvTextArea="1351, 855, 55, 19" CvTextArgument="Insert" CvType="Button" DesignTimeRectangle="1326, 844, 108, 45" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Insert' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Insert' tag='BUTTON' type='' class='geBtn gePrimaryBtn' check:innerText='Insert' /&gt;" Guid="f7d4d1c1-edd0-420b-9bf8-5914e4efa093" InformativeScreenshot="7a360800ac5d2464670441de6b9e3e4b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Untitled Diagram.drawio - draw.io' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="e0f418d7-c817-4eaf-9dc8-1559beee7417" CvElementArea="1044, 847, 29, 35" CvTextArea="877, 855, 157, 24" CvTextArgument="PlantUML (SVG)" CvType="ArrowButton" DesignTimeRectangle="860, 844, 214, 45" ElementType="DropDown" FullSelectorArgument="&lt;webctrl class='geBtn' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl class='geBtn' tag='SELECT' type='' aaname='' /&gt;" Guid="4740e65b-d2fc-4afe-a895-f270f6335d3c" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'File'" sap:VirtualizedContainerService.HintSize="354,190.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="37fab6c8-4058-478c-a3c8-b084911ffaa2" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://app.diagrams.net/#G1O3ZTazUTO-3bJ7-uygwWDQMrOkM5eXHk#%7B%22pageId%22%3A%22hH4ko7FVjG27pYYVQwnJ%22%7D" CVScreenId="d386d9a0-7f4d-403c-877e-095450814a82" CvTextArea="36, 183, 33, 19" CvTextArgument="File" CvType="Text" DesignTimeRectangle="23, 169, 54, 47" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='geItem' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='geItem' tag='A' type='' aaname='File' check:innerText='File' /&gt;" Guid="c5f0e8c8-ad24-4237-8ea3-142427d749db" InformativeScreenshot="6f12596e8ca14c9f76e95c198d9dc1a3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Untitled Diagram.drawio - draw.io' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export as'" sap:VirtualizedContainerService.HintSize="354,228" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="37fab6c8-4058-478c-a3c8-b084911ffaa2" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://app.diagrams.net/#G1O3ZTazUTO-3bJ7-uygwWDQMrOkM5eXHk#%7B%22pageId%22%3A%22hH4ko7FVjG27pYYVQwnJ%22%7D" DesignTimeRectangle="280, 746, 156, 48" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl class='mxPopupMenu' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' tableCol='3' tableRow='16' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mxPopupMenu' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' type='' aaname='' tag='TD' /&gt;" Guid="d795637b-b2ca-4e4c-b5a2-202d96492697" InformativeScreenshot="8eeb873eef9124121c50b2111410a467.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Untitled Diagram.drawio - draw.io' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="8e424911-c978-47de-9572-845b60798779" CvTextArea="72, 762, 82, 22" CvTextArgument="Export as" CvType="Text" DesignTimeRectangle="29, 746, 251, 48" ElementType="Text" FullSelectorArgument="&lt;webctrl class='mxPopupMenu' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' tableRow='16' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mxPopupMenu' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' type='' tag='TD' aaname='Export as' check:innerText='Export as' /&gt;" Guid="7005c663-2c9b-4813-b656-59f8568f3693" SearchSteps="Selector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Advanced...'" sap:VirtualizedContainerService.HintSize="354,190.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="37fab6c8-4058-478c-a3c8-b084911ffaa2" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://app.diagrams.net/#G1O3ZTazUTO-3bJ7-uygwWDQMrOkM5eXHk#%7B%22pageId%22%3A%22hH4ko7FVjG27pYYVQwnJ%22%7D" CVScreenId="550e1202-07c8-4c2b-8dc9-eb8ae7c9a075" CvTextArea="477, 975, 103, 18" CvTextArgument="Advanced..." CvType="Text" DesignTimeRectangle="435, 960, 208, 48" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl class='mxPopupMenu' idx='2' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' tableRow='13' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl class='mxPopupMenu' tag='TABLE' /&gt;&lt;webctrl class='mxPopupMenuItem' type='' tag='TD' aaname='Advanced...' check:innerText='Advanced...' /&gt;" Guid="85bd0a40-b315-489c-9b76-795072e2062c" InformativeScreenshot="e0e38078be560e8224400353c5194c15.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Untitled Diagram.drawio - draw.io' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Export'" sap:VirtualizedContainerService.HintSize="354,190.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="37fab6c8-4058-478c-a3c8-b084911ffaa2" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://app.diagrams.net/#G1O3ZTazUTO-3bJ7-uygwWDQMrOkM5eXHk#%7B%22pageId%22%3A%22hH4ko7FVjG27pYYVQwnJ%22%7D" CVScreenId="ba56a4a4-7a05-40b8-ace2-da086e0f3ad8" CvElementArea="1076, 697, 112, 48" CvTextArea="1101, 711, 64, 24" CvTextArgument="Export" CvType="Button" DesignTimeRectangle="1079, 700, 108, 45" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl aaname='Export' tableRow='10' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Export' type='' tag='BUTTON' class='geBtn gePrimaryBtn' check:innerText='Export' /&gt;" Guid="c9bc4aea-8671-40ad-8ec0-b0a7956d1cba" InformativeScreenshot="5947d1ee6caae27c3d078a3e4a5218c7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Untitled Diagram.drawio - draw.io' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Filename'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,252" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="37fab6c8-4058-478c-a3c8-b084911ffaa2" Text="[fileName]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://app.diagrams.net/#G1IbNW-EtS015CrLOcb1T2WDWOAFK4dS_9#%7B%22pageId%22%3A%22GlwV5_iHbgyThQW3elvp%22%7D" CVScreenId="d4fe5c44-6f17-4aa5-9e65-93644537ccfe" CvElementArea="744, 442, 382, 33" CvType="InputBox" DesignTimeRectangle="746, 446, 379, 29" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl class='' tag='INPUT' type='text' aaname='' /&gt;" Guid="a66dd9fa-0dc9-40a4-8a56-9537bb987801" InformativeScreenshot="2674908954111dc8ea9682f8a867399a.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Untitled Diagram.drawio - draw.io' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <uix:Target CVScreenId="d4fe5c44-6f17-4aa5-9e65-93644537ccfe" CvTextArea="652, 450, 78, 21" CvTextArgument="Save As:" CvType="Text" DesignTimeRectangle="654, 443, 79, 35" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Save As:' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Save As:' tag='DIV' type='' class='' check:innerText='Save As:' /&gt;" Guid="17a71e3c-950d-462c-a2db-d7d7e442bb05" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="354,218.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="37fab6c8-4058-478c-a3c8-b084911ffaa2" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://app.diagrams.net/#G1IbNW-EtS015CrLOcb1T2WDWOAFK4dS_9#%7B%22pageId%22%3A%22GlwV5_iHbgyThQW3elvp%22%7D" CVScreenId="d5c447c5-9013-4e0e-9244-af1cc0ce8952" CvElementArea="1173, 540, 111, 48" CvTextArea="1203, 555, 51, 19" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1176, 543, 108, 45" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Save' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Save' tag='BUTTON' type='' class='geBtn gePrimaryBtn' check:innerText='Save' /&gt;" Guid="f2be82b7-780b-4ce3-b513-ae1934357f5d" InformativeScreenshot="23908abcff88a8d04bad954c28507c00.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Untitled Diagram.drawio - draw.io' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <uix:Target CVScreenId="d5c447c5-9013-4e0e-9244-af1cc0ce8952" CvElementArea="1052, 538, 114, 51" CvTextArea="1083, 555, 52, 22" CvTextArgument="Copy" CvType="Button" DesignTimeRectangle="1056, 543, 108, 45" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Copy' class='geBtn' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Copy' class='geBtn' tag='BUTTON' type='' check:innerText='Copy' /&gt;" Guid="713fa811-3922-4ae0-b599-9833e2e896ed" SearchSteps="Selector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:BrowserScope.Body>
+                </ui:BrowserScope>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAMbSURBVFhHvZdLaBNRFIaz0IpvXYmgLnwguhFBfKBgce1jpSs3LtWtbhTFjVTbqrXii9bW+ljYhRSqWPARFTdW0Sq1UoNVCuoi2mRm0kwmyczxnNvb6Z3JmWTGBH/4IJnznNx7z0xiUZRqmFafbpgeVwCJ+J5qqDtFSPfaiZIqxUJRk0a0fyjsh3LIdNGEwepPXC1xmbaylHXmEk1wdhakm+Z6oWucrwLllmWCxQW6YBGjbR1kHx0EM37cA10zbm4BrXk+HztB+V+CHHwBHvQrq6CQeABBKnztA/3qajZWgW8izIYzOjeBPZaQ5UpV/PUOjPb1bKwKuzE5Rz+VGiAb+XCxfmTZCYU957VswDMnOAcOo2Mj2L8/y3KlitIAIYpHmXL6pWVgDdzAxc6Jgk4uBY45Bo6l42cN8sM9oF9fy8ZyiGMZdcyO398LtvEDCqMvwXx6FMwnR6Aw8hg34FswurayMWWIR5p4dMbpzNupEcjc2wnpMzNwNszEpvZB4fszyL06DdrFxWxsANEa0HEIFX/2g/XxFmitS6ZsjXPAfH5CLEfmdr0npgKiAc5QgnZuIVjv27CBN1hkO959ncdudG0Tc8AaaBe+qq0coRvI9h4AJ5vEkXuItRO51+dxZxZBv7aGtXOwS6A1zRMTLXNnh0sxOQj2n2Gx3lrLIo+/iMG7zvYdBgc3aH6o2xNLuSinPwbh9wA9VOzkkDhqfjlmCjfiMe/P3Dgbxnv2g53+Jr28olyUU60h4RvIdO+WobwKiYf4YFrh+mutSyE/eFdaeVFOtQYhpqF8/nsMURugz3StnAIbIPkN/6sBUZzkn4YVG/jSC/rl5a5/xQYcG3Pucv0J9+4npRpp59raKM78vMwwJccyxNBRNyHtAetDJ/pb0surYvITPqQ2u/6ELDsl9YVEa16AHe+BXH+LSKxivjiJd7zSk4wwOjbgHLhQ4i9i8JmhTs7AN2U0hh7LVVDde2G1yDLB4o5ljcC/biFeyydFAb4E1RD+j4mqMG/KlQjccFEU9a2JKDnntRAllc3Q8qhLNPk92jrHYrG/jibt8cfUoFsAAAAASUVORK5CYII=" InformativeScreenshot="a5a65ba2907acb8121b4e10cb376cda8.jpg" Selector="&lt;html app='msedge.exe' title='draw.io' /&gt;" Title="draw.io" Url="https://app.diagrams.net/" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
